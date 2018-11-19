@@ -38,6 +38,9 @@ namespace Dziennik.DAL
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            ///dodac usuwanie
+            ///walidacja
+          
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Entity<Klasa>()
            .HasOptional(s => s.Nauczyciel)
